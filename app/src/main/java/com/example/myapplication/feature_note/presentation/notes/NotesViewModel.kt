@@ -1,13 +1,13 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes
+package com.example.myapplication.feature_note.presentation.notes
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.NotesUseCases
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.util.NoteOrder
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.util.OrderType
+import com.example.myapplication.feature_note.domain.model.Note
+import com.example.myapplication.feature_note.domain.use_case.NotesUseCases
+import com.example.myapplication.feature_note.domain.util.NoteOrder
+import com.example.myapplication.feature_note.domain.util.OrderType
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.launchIn

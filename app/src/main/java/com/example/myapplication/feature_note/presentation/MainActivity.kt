@@ -1,30 +1,29 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation
+package com.example.myapplication.feature_note.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.add_edit_note.AddEditNoteScreen
-import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.components.NotesScreen
-import com.plcoding.cleanarchitecturenoteapp.ui.theme.CleanArchitectureNoteAppTheme
+import com.example.myapplication.feature_note.presentation.add_edit_note.AddEditNoteScreen
+import com.example.myapplication.feature_note.presentation.notes.components.NotesScreen
+import com.example.myapplication.ui.theme.CleanArchitectureNoteAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    @OptIn(ExperimentalAnimationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             CleanArchitectureNoteAppTheme {
-                androidx.compose.material.Surface(
+                Surface(
                     color = MaterialTheme.colors.background
                 ) {
                     val navController = rememberNavController()

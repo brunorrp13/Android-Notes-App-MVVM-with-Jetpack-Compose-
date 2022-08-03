@@ -1,8 +1,8 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model
+package com.example.myapplication.feature_note.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.plcoding.cleanarchitecturenoteapp.ui.theme.*
+import com.example.myapplication.ui.theme.*
 
 @Entity
 data class Note (

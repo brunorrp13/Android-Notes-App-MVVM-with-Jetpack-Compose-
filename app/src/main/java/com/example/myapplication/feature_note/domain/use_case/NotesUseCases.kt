@@ -1,4 +1,9 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case
+package com.example.myapplication.feature_note.domain.use_case
+
+import com.example.myapplication.feature_note.domain.use_case.AddNote
+import com.example.myapplication.feature_note.domain.use_case.DeleteNote
+import com.example.myapplication.feature_note.domain.use_case.GetNote
+import com.example.myapplication.feature_note.domain.use_case.GetNotes
 
 class NotesUseCases(
     val getNotes: GetNotes,

@@ -1,7 +1,7 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.data.data_source
+package com.example.myapplication.feature_note.data.data_source
 
 import androidx.room.*
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
+import com.example.myapplication.feature_note.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
 @Dao

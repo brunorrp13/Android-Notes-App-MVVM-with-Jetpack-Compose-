@@ -1,4 +1,4 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.add_edit_note
+package com.example.myapplication.feature_note.presentation.add_edit_note
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -6,9 +6,9 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.InvalidNoteException
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.use_case.NotesUseCases
+import com.example.myapplication.feature_note.domain.model.InvalidNoteException
+import com.example.myapplication.feature_note.domain.model.Note
+import com.example.myapplication.feature_note.domain.use_case.NotesUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
@@ -21,13 +21,17 @@ class AddEditNoteViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle
 ): ViewModel() {
 
-    private val _noteTitle = mutableStateOf(NoteTextFieldState(
+    private val _noteTitle = mutableStateOf(
+        NoteTextFieldState(
         hint = "Enter title..."
-    ))
+    )
+    )
     val noteTitle: State<NoteTextFieldState> = _noteTitle
 
-    private val _noteContent = mutableStateOf(NoteTextFieldState(
-        hint = "Enter some content..."))
+    private val _noteContent = mutableStateOf(
+        NoteTextFieldState(
+        hint = "Enter some content...")
+    )
     val noteContent: State<NoteTextFieldState> = _noteContent
 
     private val _noteColor = mutableStateOf<Int>(Note.noteColors.random().toArgb())

@@ -1,4 +1,4 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation
+package com.example.myapplication.feature_note.presentation
 
 sealed class Screen(val route: String) {
     object NotesScreen: Screen("notes_screen")

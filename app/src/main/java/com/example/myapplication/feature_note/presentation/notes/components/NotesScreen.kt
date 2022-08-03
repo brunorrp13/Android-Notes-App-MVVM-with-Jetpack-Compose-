@@ -1,4 +1,4 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.components
+package com.example.myapplication.feature_note.presentation.notes.components
 
 import androidx.compose.animation.*
 import androidx.compose.foundation.clickable
@@ -16,9 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.Screen
-import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.NotesEvent
-import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.NotesViewModel
+import com.example.myapplication.feature_note.presentation.Screen
+import com.example.myapplication.feature_note.presentation.notes.NotesEvent
+import com.example.myapplication.feature_note.presentation.notes.NotesViewModel
 import kotlinx.coroutines.launch
 
 @ExperimentalAnimationApi

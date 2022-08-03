@@ -1,4 +1,4 @@
-package com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.notes.components
+package com.example.myapplication.feature_note.presentation.notes.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.*
@@ -21,7 +21,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.core.graphics.ColorUtils
-import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
+import com.example.myapplication.feature_note.domain.model.Note
 
 @Composable
 fun NoteItem (
